@@ -1,0 +1,25 @@
+<svg width="340" height="240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="litterGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffb74d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff9800;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="340" height="240" fill="url(#litterGrad)" rx="8"/>
+  <!-- 猫砂盆主体 -->
+  <rect x="130" y="100" width="80" height="60" fill="#fff" opacity="0.9" rx="5"/>
+  <rect x="135" y="105" width="70" height="45" fill="#f5f5f5"/>
+  <!-- 猫砂 -->
+  <ellipse cx="155" cy="125" rx="20" ry="8" fill="#bcaaa4"/>
+  <ellipse cx="175" cy="118" rx="15" ry="6" fill="#8d6e63"/>
+  <!-- 自动铲屎功能指示 -->
+  <rect x="150" y="85" width="20" height="15" fill="#424242" rx="2"/>
+  <circle cx="160" cy="92" r="3" fill="#4caf50"/>
+  <!-- 风扇图标 -->
+  <circle cx="160" cy="92" r="6" stroke="#fff" stroke-width="1" fill="none"/>
+  <path d="M160 86 L160 98 M154 92 L166 92" stroke="#fff" stroke-width="1"/>
+  <!-- 装饰元素 -->
+  <circle cx="120" cy="90" r="4" fill="#fff" opacity="0.3"/>
+  <circle cx="220" cy="150" r="3" fill="#fff" opacity="0.2"/>
+  <text x="170" y="200" text-anchor="middle" fill="#fff" font-size="14" opacity="0.8">自动猫砂盆</text>
+</svg>

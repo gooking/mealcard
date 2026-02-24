@@ -1,0 +1,26 @@
+<svg width="340" height="240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ce93d8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ba68c8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="340" height="240" fill="url(#bedGrad)" rx="8"/>
+  <!-- 宠物窝垫 -->
+  <ellipse cx="170" cy="150" rx="80" ry="40" fill="#fff" opacity="0.9"/>
+  <ellipse cx="170" cy="140" rx="70" ry="30" fill="#f8bbd9"/>
+  <!-- 窝垫内部填充 -->
+  <ellipse cx="170" cy="135" rx="60" ry="20" fill="#e1bee7"/>
+  <ellipse cx="170" cy="130" rx="50" ry="15" fill="#ce93d8"/>
+  <!-- 装饰花纹 -->
+  <circle cx="140" cy="130" r="3" fill="#fff" opacity="0.6"/>
+  <circle cx="170" cy="125" r="2" fill="#fff" opacity="0.5"/>
+  <circle cx="200" cy="130" r="3" fill="#fff" opacity="0.6"/>
+  <!-- 小狗在窝里 -->
+  <circle cx="170" cy="115" r="8" fill="#795548"/>
+  <ellipse cx="170" cy="125" rx="6" ry="4" fill="#795548"/>
+  <!-- 装饰元素 -->
+  <circle cx="90" cy="60" r="5" fill="#fff" opacity="0.3"/>
+  <circle cx="250" cy="180" r="4" fill="#fff" opacity="0.2"/>
+  <text x="170" y="220" text-anchor="middle" fill="#fff" font-size="14" opacity="0.8">豪华温馨窝垫</text>
+</svg>

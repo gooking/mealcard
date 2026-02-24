@@ -1,0 +1,44 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bathGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9A9E;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FECFEF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FECFEF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="50" fill="url(#bathGradient)" stroke="#fff" stroke-width="4"/>
+  <!-- 浴缸主体 -->
+  <ellipse cx="60" cy="75" rx="25" ry="12" fill="#74B9FF" stroke="#0984E3" stroke-width="2"/>
+  <ellipse cx="60" cy="70" rx="22" ry="10" fill="#A8E6CF"/>
+  <!-- 浴缸边沿 -->
+  <ellipse cx="60" cy="63" rx="25" ry="3" fill="#74B9FF"/>
+  <!-- 水面 -->
+  <ellipse cx="60" cy="70" rx="22" ry="1" fill="#00CEC9" opacity="0.7"/>
+  <!-- 水花 -->
+  <circle cx="45" cy="68" r="2" fill="#00CEC9" opacity="0.6"/>
+  <circle cx="50" cy="65" r="1.5" fill="#00CEC9" opacity="0.5"/>
+  <circle cx="70" cy="67" r="2.5" fill="#00CEC9" opacity="0.7"/>
+  <circle cx="75" cy="64" r="1" fill="#00CEC9" opacity="0.4"/>
+  <!-- 小狗在洗澡 -->
+  <ellipse cx="60" cy="55" rx="12" ry="10" fill="#8B5CF6"/>
+  <!-- 耳朵 -->
+  <ellipse cx="52" cy="48" rx="4" ry="6" fill="#8B5CF6" transform="rotate(-15 52 48)"/>
+  <ellipse cx="68" cy="48" rx="4" ry="6" fill="#8B5CF6" transform="rotate(15 68 48)"/>
+  <!-- 眼睛 -->
+  <circle cx="57" cy="52" r="2" fill="#fff"/>
+  <circle cx="63" cy="52" r="2" fill="#fff"/>
+  <circle cx="57.5" cy="51.5" r="1" fill="#333"/>
+  <circle cx="63.5" cy="51.5" r="1" fill="#333"/>
+  <!-- 鼻子和嘴巴 -->
+  <ellipse cx="60" cy="57" rx="2" ry="1.5" fill="#333"/>
+  <path d="M57 59 Q60 62 63 59" stroke="#333" stroke-width="1.5" fill="none"/>
+  <!-- 洗澡巾 -->
+  <rect x="45" y="45" width="30" height="4" fill="#FF7675" rx="2"/>
+  <!-- 肥皂泡泡 -->
+  <circle cx="40" cy="50" r="3" fill="#FFEAA7" opacity="0.8" stroke="#D63031" stroke-width="1"/>
+  <circle cx="80" cy="45" r="2.5" fill="#FFEAA7" opacity="0.7" stroke="#D63031" stroke-width="1"/>
+  <circle cx="35" cy="55" r="2" fill="#FFEAA7" opacity="0.6" stroke="#D63031" stroke-width="1"/>
+  <!-- 爱心装饰 -->
+  <path d="M30 35 C28 32, 23 32, 23 37 C23 39, 30 45, 30 45 C30 45, 30 42, 30 40 C30 37, 30 35, 30 35 Z" fill="#FF4757"/>
+  <path d="M90 35 C92 32, 97 32, 97 37 C97 39, 90 45, 90 45 C90 45, 90 42, 90 40 C90 37, 90 35, 90 35 Z" fill="#FF4757"/>
+</svg>

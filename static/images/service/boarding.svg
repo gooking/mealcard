@@ -1,0 +1,33 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="boardingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9A9E;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FECFEF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FECFEF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="50" fill="url(#boardingGradient)" stroke="#fff" stroke-width="4"/>
+  <!-- 房子主体 -->
+  <rect x="35" y="55" width="50" height="25" fill="#8B5CF6" stroke="#7C3AED" stroke-width="2"/>
+  <!-- 屋顶 -->
+  <polygon points="30,55 60,35 90,55" fill="#A855F7" stroke="#7C3AED" stroke-width="2"/>
+  <!-- 门 -->
+  <rect x="50" y="60" width="20" height="20" fill="#4C1D95"/>
+  <circle cx="68" cy="68" r="2" fill="#FFD700"/>
+  <!-- 窗户 -->
+  <rect x="38" y="58" width="8" height="8" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1"/>
+  <rect x="74" y="58" width="8" height="8" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1"/>
+  <!-- 小狗 -->
+  <ellipse cx="75" cy="75" rx="8" ry="6" fill="#8B5CF6"/>
+  <ellipse cx="70" cy="72" rx="3" ry="4" fill="#8B5CF6" transform="rotate(-20 70 72)"/>
+  <ellipse cx="80" cy="72" rx="3" ry="4" fill="#8B5CF6" transform="rotate(20 80 72)"/>
+  <circle cx="73" cy="74" r="1.5" fill="#fff"/>
+  <circle cx="77" cy="74" r="1.5" fill="#fff"/>
+  <circle cx="73.5" cy="73.5" r="0.8" fill="#333"/>
+  <circle cx="77.5" cy="73.5" r="0.8" fill="#333"/>
+  <!-- 尾巴 -->
+  <path d="M83 78 Q87 76 85 82" stroke="#8B5CF6" stroke-width="3" fill="none"/>
+  <!-- 爱心装饰 -->
+  <path d="M25 45 C23 42, 18 42, 18 47 C18 49, 25 55, 25 55 C25 55, 25 52, 25 50 C25 47, 25 45, 25 45 Z" fill="#FF4757"/>
+  <path d="M95 45 C97 42, 102 42, 102 47 C102 49, 95 55, 95 55 C95 55, 95 52, 95 50 C95 47, 95 45, 95 45 Z" fill="#FF4757"/>
+</svg>

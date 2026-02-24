@@ -1,0 +1,22 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆形 - 使用温暖的橙色系，符合餐饮场景 -->
+  <circle cx="60" cy="60" r="60" fill="#FF9500"/>
+  
+  <!-- 用户头像 - 头部 -->
+  <circle cx="60" cy="45" r="18" fill="#FFFFFF"/>
+  
+  <!-- 用户头像 - 身体 -->
+  <ellipse cx="60" cy="85" rx="28" ry="22" fill="#FFFFFF"/>
+  
+  <!-- 装饰元素 - 餐具图标 -->
+  <g opacity="0.2">
+    <!-- 勺子 -->
+    <circle cx="35" cy="25" r="3" fill="#FFFFFF"/>
+    <rect x="34" y="28" width="2" height="10" rx="1" fill="#FFFFFF"/>
+    
+    <!-- 叉子 -->
+    <rect x="83" y="20" width="2" height="15" rx="1" fill="#FFFFFF"/>
+    <rect x="80" y="20" width="2" height="8" rx="1" fill="#FFFFFF"/>
+    <rect x="86" y="20" width="2" height="8" rx="1" fill="#FFFFFF"/>
+  </g>
+</svg>

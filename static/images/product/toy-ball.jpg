@@ -1,0 +1,26 @@
+<svg width="340" height="240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="toyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#81c784;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4caf50;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="340" height="240" fill="url(#toyGrad)" rx="8"/>
+  <!-- 智能玩具球 -->
+  <circle cx="170" cy="120" r="40" fill="#fff" opacity="0.9"/>
+  <circle cx="170" cy="120" r="35" fill="#4caf50"/>
+  <!-- 球上的图案 -->
+  <circle cx="155" cy="110" r="4" fill="#fff"/>
+  <circle cx="185" cy="110" r="4" fill="#fff"/>
+  <ellipse cx="170" cy="135" rx="8" ry="4" fill="#fff"/>
+  <!-- 电子元件指示 -->
+  <rect x="165" y="105" width="10" height="2" fill="#ff5722"/>
+  <circle cx="170" cy="120" r="2" fill="#2196f3"/>
+  <!-- 装饰光效 -->
+  <circle cx="150" cy="100" r="8" fill="#fff" opacity="0.3"/>
+  <circle cx="190" cy="140" r="6" fill="#fff" opacity="0.2"/>
+  <!-- 装饰元素 -->
+  <circle cx="100" cy="70" r="4" fill="#fff" opacity="0.3"/>
+  <circle cx="240" cy="170" r="3" fill="#fff" opacity="0.2"/>
+  <text x="170" y="200" text-anchor="middle" fill="#fff" font-size="14" opacity="0.8">智能互动玩具球</text>
+</svg>

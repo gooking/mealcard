@@ -1,0 +1,18 @@
+<svg width="280" height="160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="feedingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff9a9e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fecfef;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="280" height="160" fill="url(#feedingGrad)" rx="8"/>
+  <!-- 宠物碗图标 -->
+  <circle cx="140" cy="80" r="35" fill="#fff" opacity="0.9"/>
+  <ellipse cx="140" cy="95" rx="25" ry="8" fill="#333"/>
+  <circle cx="140" cy="75" r="20" fill="#ff4757"/>
+  <text x="140" y="82" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold">食</text>
+  <!-- 装饰元素 -->
+  <circle cx="50" cy="40" r="8" fill="#fff" opacity="0.3"/>
+  <circle cx="230" cy="120" r="6" fill="#fff" opacity="0.2"/>
+  <text x="140" y="140" text-anchor="middle" fill="#fff" font-size="12" opacity="0.8">精品周投喂套餐</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg width="280" height="160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="comboGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="280" height="160" fill="url(#comboGrad)" rx="8"/>
+  <!-- 礼盒图标 -->
+  <rect x="115" y="65" width="50" height="35" fill="#fff" opacity="0.9" rx="3"/>
+  <rect x="125" y="75" width="30" height="20" fill="#f5576c"/>
+  <!-- 蝴蝶结 -->
+  <ellipse cx="140" cy="55" rx="8" ry="12" fill="#fff" opacity="0.9"/>
+  <ellipse cx="140" cy="65" rx="12" ry="8" fill="#fff" opacity="0.9"/>
+  <circle cx="140" cy="60" r="4" fill="#f5576c"/>
+  <!-- 装饰星星 -->
+  <polygon points="80,50 83,58 91,58 85,63 88,71 80,66 72,71 75,63 69,58 77,58" fill="#fff" opacity="0.4"/>
+  <polygon points="200,120 203,128 211,128 205,133 208,141 200,136 192,141 195,133 189,128 197,128" fill="#fff" opacity="0.3"/>
+  <text x="140" y="145" text-anchor="middle" fill="#fff" font-size="12" opacity="0.8">宠物新春护理套餐</text>
+</svg>
