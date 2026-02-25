@@ -14,7 +14,13 @@
 				</view>
 				<view class="message-content">
 					<view class="message-header">
-						<text class="message-title">{{ item.title }}</text>
+						<view class="title-wrapper">
+							<view class="top-badge" v-if="item.isTop">
+								<uni-icons type="flag-filled" size="20" color="#fff"></uni-icons>
+								<text class="top-text">置顶</text>
+							</view>
+							<text class="message-title">{{ item.title }}</text>
+						</view>
 						<text class="message-time">{{ formatTime(item.dateAdd) }}</text>
 					</view>
 					<text class="message-text">{{ item.content }}</text>
@@ -227,10 +233,22 @@
 		align-items: flex-start;
 		gap: 20rpx;
 		position: relative;
+		transition: all 0.3s ease;
 	}
 
 	.message-item.unread {
 		background: #f8f9ff;
+	}
+
+	/* 置顶消息样式 */
+	.message-item:has(.top-badge) {
+		background: linear-gradient(135deg, #fff9f0 0%, #fff 100%);
+		border: 2rpx solid #ffd700;
+		box-shadow: 0 4rpx 20rpx rgba(255, 215, 0, 0.15);
+	}
+
+	.message-item:has(.top-badge).unread {
+		background: linear-gradient(135deg, #fff9f0 0%, #f8f9ff 100%);
 	}
 
 	.message-icon {
@@ -269,14 +287,51 @@
 	.message-header {
 		display: flex;
 		justify-content: space-between;
+		align-items: flex-start;
+		gap: 20rpx;
+	}
+
+	.title-wrapper {
+		flex: 1;
+		display: flex;
 		align-items: center;
+		gap: 12rpx;
+		flex-wrap: wrap;
+	}
+
+	.top-badge {
+		display: inline-flex;
+		align-items: center;
+		gap: 6rpx;
+		padding: 6rpx 16rpx;
+		background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+		border-radius: 20rpx;
+		box-shadow: 0 4rpx 12rpx rgba(255, 107, 107, 0.3);
+		animation: topBadgePulse 2s ease-in-out infinite;
+	}
+
+	@keyframes topBadgePulse {
+		0%, 100% {
+			box-shadow: 0 4rpx 12rpx rgba(255, 107, 107, 0.3);
+		}
+		50% {
+			box-shadow: 0 4rpx 16rpx rgba(255, 107, 107, 0.5);
+		}
+	}
+
+	.top-text {
+		font-size: 22rpx;
+		font-weight: bold;
+		color: #fff;
+		line-height: 1;
+		letter-spacing: 1rpx;
 	}
 
 	.message-title {
 		font-size: 30rpx;
 		font-weight: bold;
 		color: #333;
-		padding-right: 16rpx;
+		line-height: 1.4;
 	}
 
 	.message-time {

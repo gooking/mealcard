@@ -2,8 +2,8 @@
     "name" : "mealcard",
     "appid" : "__UNI__7061ADB",
     "description" : "易享会员卡",
-    "versionName" : "26.2.14",
-    "versionCode" : 260214,
+    "versionName" : "26.2.25",
+    "versionCode" : 260225,
     "transformPx" : false,
     /* 5+App特有相关 */
     "app-plus" : {

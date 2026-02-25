@@ -137,6 +137,19 @@
 		<view class="logout-section">
 			<button class="logout-btn" @click="handleLogout">退出登录</button>
 		</view>
+		
+		<!-- 版本信息 -->
+		<view class="version-section">
+			<view class="version-content">
+				<view class="version-icon">
+					<uni-icons type="info" size="16" color="#999"></uni-icons>
+				</view>
+				<text class="version-text">Version {{ version }}</text>
+			</view>
+			<view class="copyright">
+				<text class="copyright-text">© 2024 All Rights Reserved</text>
+			</view>
+		</view>
 
 		<!-- 意见反馈弹窗 -->
 		<view class="feedback-modal" v-if="showFeedbackModal" @click="closeFeedback">
@@ -235,7 +248,8 @@
 					mobile: '',
 					content: '',
 					images: []
-				}
+				},
+				version: uni.getAppBaseInfo().appVersion
 			}
 		},
 
@@ -1232,5 +1246,50 @@
 	.submit-btn {
 		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 		color: #fff;
+	}
+
+	/* 版本信息 */
+	.version-section {
+		margin: 40rpx 30rpx 30rpx;
+		padding: 30rpx;
+		background: #fff;
+		border-radius: 20rpx;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 15rpx;
+	}
+
+	.version-content {
+		display: flex;
+		align-items: center;
+		gap: 10rpx;
+	}
+
+	.version-icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.version-text {
+		font-size: 24rpx;
+		color: #999;
+		font-weight: 500;
+		letter-spacing: 1rpx;
+	}
+
+	.copyright {
+		padding-top: 10rpx;
+		border-top: 1rpx solid #f0f0f0;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.copyright-text {
+		font-size: 22rpx;
+		color: #bbb;
+		letter-spacing: 0.5rpx;
 	}
 </style>
