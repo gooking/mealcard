@@ -25,7 +25,7 @@
 				<view class="input-icon">⿻</view>
 				<input 
 					class="input-box captcha-input" 
-					type="text" 
+					type="number" 
 					maxlength="4" 
 					v-model="picCode" 
 					placeholder="请输入图形验证码"
@@ -57,6 +57,19 @@
 			<button class="login-btn" @click="handleLogin" :disabled="logging">
 				{{ logging ? '登录中...' : '立即登录' }}
 			</button>
+
+			<view class="test-account-box">
+				<view class="test-account-title">
+					<text class="test-icon">🔧</text>
+					<text class="test-text">测试账号</text>
+				</view>
+				<view class="test-account-info" @click="fillTestAccount">
+					<text class="test-label">手机号：</text>
+					<text class="test-value">13500000000</text>
+					<text class="click-hint">👆 点击填入</text>
+				</view>
+				<view class="test-account-tip">验证码可随意填写</view>
+			</view>
 
 			<view class="agreement-box">
 				<text class="agreement-text">登录即表示同意</text>
@@ -215,6 +228,15 @@
 			openAgreement(key) {
 				uni.navigateTo({
 					url: `/pages/agreement/agreement?key=${key}`
+				})
+			},
+
+			fillTestAccount() {
+				this.mobile = '13500000000'
+				uni.showToast({
+					title: '已填入测试账号',
+					icon: 'success',
+					duration: 1500
 				})
 			}
 		}
@@ -375,5 +397,86 @@
 		font-size: 24rpx;
 		color: #FF6B35;
 		margin: 0 4rpx;
+	}
+
+	.test-account-box {
+		margin-top: 32rpx;
+		padding: 24rpx;
+		background: linear-gradient(135deg, #FFF5F0 0%, #FFF8F5 100%);
+		border-radius: 16rpx;
+		border: 2rpx dashed #FFB89A;
+	}
+
+	.test-account-title {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 16rpx;
+	}
+
+	.test-icon {
+		font-size: 28rpx;
+		margin-right: 8rpx;
+	}
+
+	.test-text {
+		font-size: 26rpx;
+		color: #FF6B35;
+		font-weight: bold;
+	}
+
+	.test-account-info {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 8rpx;
+		padding: 12rpx 20rpx;
+		background: #fff;
+		border-radius: 12rpx;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		position: relative;
+	}
+
+	.test-account-info:active {
+		transform: scale(0.98);
+		background: #FFF8F5;
+	}
+
+	.test-label {
+		font-size: 26rpx;
+		color: #666;
+	}
+
+	.test-value {
+		font-size: 28rpx;
+		color: #333;
+		font-weight: bold;
+		letter-spacing: 1rpx;
+		margin-right: 12rpx;
+	}
+
+	.click-hint {
+		font-size: 22rpx;
+		color: #FF6B35;
+		animation: bounce 2s infinite;
+	}
+
+	@keyframes bounce {
+		0%, 20%, 50%, 80%, 100% {
+			transform: translateY(0);
+		}
+		40% {
+			transform: translateY(-4rpx);
+		}
+		60% {
+			transform: translateY(-2rpx);
+		}
+	}
+
+	.test-account-tip {
+		text-align: center;
+		font-size: 24rpx;
+		color: #999;
 	}
 </style>
